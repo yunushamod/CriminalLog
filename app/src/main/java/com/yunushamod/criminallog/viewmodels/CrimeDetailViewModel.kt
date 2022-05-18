@@ -19,5 +19,6 @@ class CrimeDetailViewModel: ViewModel() {
         crimeIdLiveData.value = crimeId
     }
     fun saveCrime(crime: Crime) = crimeRepository.updateCrime(crime)
+    fun getPhotoFile(crime: Crime) = crimeRepository.getPhotoFile(crime)
 
 }
